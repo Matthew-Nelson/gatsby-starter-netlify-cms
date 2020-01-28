@@ -1,9 +1,7 @@
 ---
-templateKey: "about-page"
-path: /home-designs
+templateKey: about-page
 title: Our Home Designs
 ---
-
 ### Many home designs
 
 Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
@@ -15,3 +13,5 @@ Single-origin coffee is coffee grown within a single known geographic origin. So
 ### Yeet
 
 Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+
+![javi site](/img/Screen Shot 2020-01-27 at 12.25.33 PM.png)
