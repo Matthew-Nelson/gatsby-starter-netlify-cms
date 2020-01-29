@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
-image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+title: Welcome to Bella Montana
+image: /img/home-page-banner.jpg
+heading: Welcome to Bella Montana
+subheading: An exclusive residential community designed by the Cal Poly Corporation for university faculty and staff.
 mainpitch:
   title: Why Kaldi
   description: >
