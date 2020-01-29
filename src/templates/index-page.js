@@ -8,39 +8,47 @@ import BlogRoll from "../components/BlogRoll";
 
 import "./Home.scss";
 
+import WelcomeImage from "../img/welcome-hero-text.png";
+import Arrow from "../img/arrow.png";
+
 export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch, description, intro }) => (
   <div>
     <div
       className='full-width-image margin-top-0'
       style={{
         backgroundImage: `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image})`,
-        backgroundPosition: `center `,
+        backgroundPosition: `center`,
         // backgroundAttachment: `fixed`,
         height: `100vh`,
-        position: `relative`
+        // maxHeight: `1250px`,
+        position: `relative`,
+        alignItems: `flex-end`
       }}
     >
-      <section className='section'>
+      <section className='section pull-front' style={{ zIndex: "2" }}>
         <div className='container'>
           <div className='columns'>
             <div
+              className='column is-10 is-offset-1'
               style={{
                 display: "flex",
-                height: "150px",
+                // height: "150px",
                 lineHeight: "1",
                 justifyContent: "space-around",
                 alignItems: "left",
                 flexDirection: "column"
               }}
             >
+              <img src={WelcomeImage} alt='' />
               <h1
                 className='has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen'
                 style={{
-                  boxShadow: "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-                  backgroundColor: "rgb(255, 68, 0)",
+                  // boxShadow: "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
+                  // backgroundColor: "rgb(255, 68, 0)",
                   color: "white",
                   lineHeight: "1",
-                  padding: "0.25em"
+                  padding: "0.25em",
+                  display: "none"
                 }}
               >
                 {title}
@@ -48,8 +56,8 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
               <h3
                 className='has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen'
                 style={{
-                  boxShadow: "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-                  backgroundColor: "rgb(255, 68, 0)",
+                  // boxShadow: "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
+                  // backgroundColor: "rgb(255, 68, 0)",
                   color: "white",
                   lineHeight: "1",
                   padding: "0.25em"
@@ -57,6 +65,19 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
               >
                 {subheading}
               </h3>
+              <Link to='/' className='button' style={{ textTransform: "uppercase" }}>
+                Find your home
+              </Link>
+              <img
+                src={Arrow}
+                alt='down arrow'
+                style={{
+                  width: `15px`,
+                  height: "auto",
+                  alignSelf: "center",
+                  margin: "1rem 0"
+                }}
+              />
             </div>
           </div>
         </div>
@@ -73,7 +94,8 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
           opacity: 1,
           textAlign: `left`,
           color: `#fff`,
-          background: `linear-gradient(to bottom, rgba(3, 86, 66, 0) 0%, rgba(3, 86, 66, .95) 50%,  rgba(3, 86, 66, 1.0) 100%)`
+          // background: `linear-gradient(to bottom, rgba(3, 86, 66, 0) 0%, rgba(3, 86, 66, .95) 50%,  rgba(3, 86, 66, 1.0) 100%)`,
+          background: `linear-gradient(to bottom, rgba(3, 86, 66, 0) 0%, rgba(3, 86, 66, .75) 50%,  rgba(3, 86, 66, 1.0) 100%)`
         }}
       ></div>
     </div>
@@ -137,6 +159,7 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
+  console.log(data.fileName);
 
   return (
     <Layout>
