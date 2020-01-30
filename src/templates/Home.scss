@@ -1,0 +1,7 @@
+.home-banner {
+  &.parallax {
+    @media only screen and (min-width: 769px) {
+      background-attachment: fixed;
+    }
+  }
+}
