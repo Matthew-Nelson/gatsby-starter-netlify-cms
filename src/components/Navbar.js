@@ -3,6 +3,8 @@ import { Link } from "gatsby";
 import logoColor from "../img/logo-color.png";
 import logoBlack from "../img/logo-black.png";
 
+import "./Navbar.scss";
+
 const Navbar = class extends React.Component {
   constructor(props) {
     super(props);
@@ -68,15 +70,15 @@ const Navbar = class extends React.Component {
             </div>
           </div>
           <div id='navMenu' className={`navbar-menu ${this.state.navBarActiveClass}`} style={{ flexDirection: "column", justifyContent: "center" }}>
-            <div className='navbar-end has-text-centered top' style={{ color: "goldenRod" }}>
-              <Link className='navbar-item' to='/contact-us' style={{ color: "inherit" }}>
+            <div className='navbar-end has-text-centered top'>
+              <Link className='navbar-item' to='/contact-us'>
                 Contact Us
               </Link>
-              <a className='navbar-item' href='https://www.calpolycorporation.org/' target='_blank' rel='noopener noreferrer' style={{ color: "inherit" }}>
+              <a className='navbar-item' href='https://www.calpolycorporation.org/' target='_blank' rel='noopener noreferrer'>
                 Back to Cal Poly Corporation
               </a>
             </div>
-            <div className='navbar-end has-text-centered bottom'>
+            <div className='navbar-end has-text-centered bottom' style={{ textTransform: "uppercase" }}>
               <Link className='navbar-item' to='/about'>
                 About
               </Link>

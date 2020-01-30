@@ -14,12 +14,14 @@ import FadedHouses from "../img/faded-houses.jpg";
 import Arrow from "../img/arrow.png";
 
 export const IndexPageTemplate = ({ sampleImage, image, title, heading, subheading, mainpitch, description, intro }) => {
+  console.log(image);
+
   return (
     <div>
       <div
         className='full-width-image margin-top-0 home-banner parallax'
         style={{
-          backgroundImage: `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image})`,
+          // backgroundImage: `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image})`,
           backgroundPosition: `center`,
           // backgroundAttachment: `fixed`,
           height: `100vh`,
@@ -57,13 +59,15 @@ export const IndexPageTemplate = ({ sampleImage, image, title, heading, subheadi
                   {title}
                 </h1>
                 <h3
-                  className='has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen'
+                  // className='has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen'
                   style={{
                     // boxShadow: "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
                     // backgroundColor: "rgb(255, 68, 0)",
                     color: "white",
                     lineHeight: "1",
-                    padding: "0.25em"
+                    padding: "0.25em",
+                    fontSize: "1.25rem",
+                    textAlign: "center"
                   }}
                 >
                   {subheading}
@@ -195,7 +199,6 @@ IndexPageTemplate.propTypes = {
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
   console.log(data);
-  console.log(data.sampleImage);
 
   return (
     <Layout>

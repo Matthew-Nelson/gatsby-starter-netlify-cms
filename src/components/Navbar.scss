@@ -1,0 +1,11 @@
+.navbar-menu {
+  .top {
+    a {
+      color: #035642;
+      &:hover,
+      &:active {
+        color: #3273dc;
+      }
+    }
+  }
+}
