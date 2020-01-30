@@ -3,7 +3,9 @@ templateKey: index-page
 title: Welcome to Bella Montana
 image: /img/home-page-banner.jpg
 heading: Welcome to Bella Montana
-subheading: An exclusive residential community designed by the Cal Poly Corporation for university faculty and staff.
+subheading: >-
+  An exclusive residential community designed by the Cal Poly Corporation for
+  university faculty and staff.
 mainpitch:
   title: Why Kaldi
   description: >
@@ -68,3 +70,4 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
+
