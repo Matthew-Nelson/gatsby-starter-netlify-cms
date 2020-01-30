@@ -21,7 +21,7 @@ export const IndexPageTemplate = ({ sampleImage, image, title, heading, subheadi
       <div
         className='full-width-image margin-top-0 home-banner parallax'
         style={{
-          // backgroundImage: `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image})`,
+          backgroundImage: `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image})`,
           backgroundPosition: `center`,
           // backgroundAttachment: `fixed`,
           height: `100vh`,
