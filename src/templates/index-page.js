@@ -67,12 +67,25 @@ export const IndexPageTemplate = ({ sampleImage, image, title, heading, subheadi
                     lineHeight: "1",
                     padding: "0.25em",
                     fontSize: "1.25rem",
-                    textAlign: "center"
+                    textAlign: "center",
+                    margin: "2rem 0"
                   }}
                 >
                   {subheading}
                 </h3>
-                <Link to='/' className='button' style={{ textTransform: "uppercase" }}>
+                <Link
+                  to='/'
+                  className='button'
+                  style={{
+                    textTransform: "uppercase",
+                    marginBottom: "3rem",
+                    alignSelf: "center",
+                    backgroundColor: "unset",
+                    color: "white",
+                    fontWeight: 700,
+                    fontSize: "0.95rem"
+                  }}
+                >
                   Find your home
                 </Link>
                 <img
@@ -96,13 +109,13 @@ export const IndexPageTemplate = ({ sampleImage, image, title, heading, subheadi
             position: `absolute`,
             left: 0,
             bottom: 0,
-            height: `50%`,
+            height: `65%`,
             width: `100%`,
             opacity: 1,
             textAlign: `left`,
             color: `#fff`,
             // background: `linear-gradient(to bottom, rgba(3, 86, 66, 0) 0%, rgba(3, 86, 66, .95) 50%,  rgba(3, 86, 66, 1.0) 100%)`,
-            background: `linear-gradient(to bottom, rgba(3, 86, 66, 0) 0%, rgba(3, 86, 66, .75) 50%,  rgba(3, 86, 66, 1.0) 100%)`
+            background: `linear-gradient(to bottom, rgba(3, 86, 66, 0) 0%, rgba(3, 86, 66, .85) 50%,  rgba(3, 86, 66, 1.0) 100%)`
           }}
         ></div>
       </div>
