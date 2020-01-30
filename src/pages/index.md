@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Welcome to Bella Montana
-image: /img/home-page-banner.jpg
+image: /img/blog-index.jpg
 heading: Welcome to Bella Montana
 subheading: >-
   An exclusive residential community designed by the Cal Poly Corporation for
@@ -70,3 +70,4 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
+
