@@ -4,8 +4,8 @@ import { Link, graphql } from "gatsby";
 import Img from "gatsby-image";
 
 import Layout from "../components/Layout";
-import Features from "../components/Features";
-import BlogRoll from "../components/BlogRoll";
+// import Features from "../components/Features";
+// import BlogRoll from "../components/BlogRoll";
 
 import "./Home.scss";
 
@@ -21,7 +21,7 @@ export const IndexPageTemplate = ({ sampleImage, image, title, heading, subheadi
         style={{
           backgroundImage: `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image})`,
           backgroundPosition: `center`,
-          // backgroundAttachment: `fixed`,
+          backgroundAttachment: `fixed`,
           height: `100vh`,
           // maxHeight: `1250px`,
           position: `relative`,
